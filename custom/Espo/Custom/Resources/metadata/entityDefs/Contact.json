@@ -1,0 +1,54 @@
+{
+    "fields": {
+        "dogs": {
+            "type": "linkMultiple",
+            "isCustom": true
+        },
+        "emergencyName": {
+            "type": "varchar",
+            "maxLength": 120,
+            "isCustom": true
+        },
+        "emergencyPhone": {
+            "type": "varchar",
+            "maxLength": 40,
+            "isCustom": true
+        },
+        "clientLink": {
+            "type": "url",
+            "readOnly": false,
+            "isCustom": true
+        },
+        "signinToken": {
+            "type": "varchar",
+            "maxLength": 64,
+            "isCustom": true
+        },
+        "signinExpires": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "signinCount": {
+            "type": "int",
+            "isCustom": true
+        },
+        "signinWindow": {
+            "type": "datetime",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "dogs": {
+            "type": "hasMany",
+            "foreign": "contact",
+            "entity": "Dog",
+            "isCustom": true
+        },
+        "lessonPackages": {
+            "type": "hasMany",
+            "entity": "LessonPackage",
+            "isCustom": true,
+            "foreign": "contact"
+        }
+    }
+}

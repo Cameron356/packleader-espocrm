@@ -1,0 +1,245 @@
+[
+    {
+        "label": "Decision",
+        "rows": [
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "discount"
+                }
+            ],
+            [
+                {
+                    "name": "returningClient"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "returningChanges",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "dogSize"
+                },
+                {
+                    "name": "price"
+                }
+            ],
+            [
+                {
+                    "name": "lessonStart"
+                },
+                {
+                    "name": "lessonMinutes"
+                }
+            ],
+            [
+                {
+                    "name": "lessonLocation"
+                },
+                {
+                    "name": "lessonAddress"
+                }
+            ],
+            [
+                {
+                    "name": "lessonPackage"
+                },
+                {
+                    "name": "groupClass"
+                }
+            ],
+            [
+                {
+                    "name": "clientNote",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "flowNote",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "accountName"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "emergencyName"
+                },
+                {
+                    "name": "emergencyPhone"
+                }
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                false
+            ]
+        ]
+    },
+    {
+        "label": "Service",
+        "rows": [
+            [
+                {
+                    "name": "dogName"
+                },
+                {
+                    "name": "service"
+                }
+            ],
+            [
+                {
+                    "name": "arrive"
+                },
+                {
+                    "name": "depart"
+                }
+            ],
+            [
+                {
+                    "name": "dropOffTime"
+                },
+                {
+                    "name": "pickUpTime"
+                }
+            ],
+            [
+                {
+                    "name": "preferredTime"
+                },
+                {
+                    "name": "dogSize"
+                }
+            ],
+            [
+                {
+                    "name": "photoConsent"
+                },
+                {
+                    "name": "agreementAccepted"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Vet",
+        "rows": [
+            [
+                {
+                    "name": "vetClinic"
+                },
+                {
+                    "name": "vetName"
+                }
+            ],
+            [
+                {
+                    "name": "vetAddress"
+                },
+                {
+                    "name": "vetPhone"
+                }
+            ],
+            [
+                {
+                    "name": "emergencyVet"
+                },
+                false
+            ]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "source"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                },
+                false
+            ]
+        ]
+    },
+    {
+        "label": "Invoice and payment",
+        "rows": [
+            [
+                {
+                    "name": "payMethod"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "paymentStatus"
+                },
+                {
+                    "name": "invoiceTotal"
+                }
+            ],
+            [
+                {
+                    "name": "paymentDue"
+                },
+                {
+                    "name": "paidAt"
+                }
+            ],
+            [
+                {
+                    "name": "invoiceUrl"
+                },
+                {
+                    "name": "bookingUrl"
+                }
+            ],
+            [
+                {
+                    "name": "ackSentAt"
+                },
+                {
+                    "name": "decisionSentAt"
+                }
+            ],
+            [
+                {
+                    "name": "stripeInvoiceId"
+                },
+                false
+            ]
+        ]
+    }
+]

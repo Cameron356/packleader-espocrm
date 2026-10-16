@@ -1,0 +1,35 @@
+[
+    {
+        "label": "Report card",
+        "rows": [
+            [
+                {
+                    "name": "stay"
+                },
+                {
+                    "name": "date"
+                }
+            ],
+            [
+                {
+                    "name": "kind"
+                },
+                {
+                    "name": "doneBy"
+                }
+            ],
+            [
+                {
+                    "name": "note",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "sentAt"
+                },
+                false
+            ]
+        ]
+    }
+]

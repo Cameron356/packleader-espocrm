@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "dogs": "Dogs",
+        "emergencyName": "Emergency contact",
+        "emergencyPhone": "Emergency phone",
+        "clientLink": "Client link",
+        "lessonPackages": "Lesson packages"
+    },
+    "links": {
+        "dogs": "Dogs",
+        "lessonPackages": "Lesson packages"
+    },
+    "tooltips": {
+        "clientLink": "Their private link to book again and see what's coming up. It is in every office email. Clear it to stop the old link working; a new one is made with the next email."
+    }
+}

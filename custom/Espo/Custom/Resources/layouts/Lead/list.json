@@ -1,0 +1,34 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "returningClient",
+        "width": 9
+    },
+    {
+        "name": "phoneNumber",
+        "width": 14
+    },
+    {
+        "name": "dogName",
+        "width": 14
+    },
+    {
+        "name": "service",
+        "width": 14
+    },
+    {
+        "name": "arrive",
+        "width": 12
+    },
+    {
+        "name": "status",
+        "width": 12
+    },
+    {
+        "name": "paymentStatus",
+        "width": 12
+    }
+]

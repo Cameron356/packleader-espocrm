@@ -1,0 +1,51 @@
+[
+    {
+        "label": "Package",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "contact"
+                },
+                {
+                    "name": "dog"
+                }
+            ],
+            [
+                {
+                    "name": "sessions"
+                },
+                {
+                    "name": "purchaseDate"
+                }
+            ],
+            [
+                {
+                    "name": "sessionsHeld"
+                },
+                {
+                    "name": "sessionsBooked"
+                }
+            ],
+            [
+                {
+                    "name": "sessionsLeft"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

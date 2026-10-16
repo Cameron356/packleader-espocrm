@@ -1,0 +1,26 @@
+[
+    {
+        "route": "/PackLeader/shotRecords/:id",
+        "method": "post",
+        "actionClassName": "Espo\\Custom\\Api\\ShotRecordsUpload",
+        "noAuth": true
+    },
+    {
+        "route": "/PackLeader/booking",
+        "method": "post",
+        "actionClassName": "Espo\\Custom\\Api\\BookingSubmit",
+        "noAuth": true
+    },
+    {
+        "route": "/PackLeader/bookAgain/:id",
+        "method": "post",
+        "actionClassName": "Espo\\Custom\\Api\\BookAgainSubmit",
+        "noAuth": true
+    },
+    {
+        "route": "/PackLeader/clientLink",
+        "method": "post",
+        "actionClassName": "Espo\\Custom\\Api\\ClientLinkRequest",
+        "noAuth": true
+    }
+]

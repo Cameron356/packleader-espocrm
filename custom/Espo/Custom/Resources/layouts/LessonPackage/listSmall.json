@@ -1,0 +1,21 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "sessions"
+    },
+    {
+        "name": "sessionsHeld"
+    },
+    {
+        "name": "sessionsBooked"
+    },
+    {
+        "name": "sessionsLeft"
+    },
+    {
+        "name": "status"
+    }
+]

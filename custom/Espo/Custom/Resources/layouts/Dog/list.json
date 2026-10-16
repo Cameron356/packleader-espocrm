@@ -1,0 +1,26 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "contact",
+        "width": 20
+    },
+    {
+        "name": "breed",
+        "width": 16
+    },
+    {
+        "name": "rabiesDue",
+        "width": 14
+    },
+    {
+        "name": "dhppDue",
+        "width": 14
+    },
+    {
+        "name": "bordetellaDue",
+        "width": 14
+    }
+]

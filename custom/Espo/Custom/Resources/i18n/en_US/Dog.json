@@ -1,0 +1,90 @@
+{
+    "fields": {
+        "breed": "Breed",
+        "sex": "Sex",
+        "intact": "Intact",
+        "crateTrained": "Crate trained",
+        "temperament": "Temperament",
+        "rabiesDue": "Rabies due",
+        "dhppDue": "DAPP due",
+        "bordetellaDue": "Bordetella due",
+        "contact": "Owner",
+        "stays": "Stays",
+        "meetings": "Lessons",
+        "groupClasses": "Group classes",
+        "age": "Age",
+        "preventionCurrent": "Flea/tick and heartworm current",
+        "vetClinic": "Vet clinic name",
+        "vetName": "Preferred vet",
+        "vetAddress": "Vet clinic address",
+        "vetPhone": "Vet clinic phone",
+        "emergencyVet": "Preferred emergency vet (if you have none, we use VEG Clearwater)",
+        "goodWith": "My dog is good with (check all that apply)",
+        "shotRecords": "Shot records",
+        "dogSize": "Size",
+        "foodSource": "Food",
+        "feeding": "Feeding",
+        "medications": "Medications",
+        "specialCare": "Special care",
+        "lessonPackages": "Lesson packages",
+        "birthDate": "Birth date",
+        "weight": "Weight (lbs)",
+        "weightDate": "Weight date",
+        "rabiesGiven": "Rabies given",
+        "dhppGiven": "DAPP given",
+        "bordetellaGiven": "Bordetella given",
+        "leptospirosisDue": "Leptospirosis due",
+        "influenzaDue": "Influenza due",
+        "microchip": "Microchip",
+        "spayNeuterDate": "Spay/neuter date",
+        "vetRecordDate": "Vet record date"
+    },
+    "links": {
+        "contact": "Owner",
+        "stays": "Stays",
+        "meetings": "Private lessons",
+        "groupClasses": "Group classes",
+        "lessonPackages": "Lesson packages"
+    },
+    "labels": {
+        "Create Dog": "Create Dog"
+    },
+    "options": {
+        "sex": {
+            "": "",
+            "Female": "Female",
+            "Male": "Male"
+        },
+        "goodWith": {
+            "MaleDogs": "Male dogs",
+            "FemaleDogs": "Female dogs",
+            "LargeDogs": "Large dogs",
+            "SmallDogs": "Small dogs",
+            "Puppies": "Puppies",
+            "Cats": "Cats",
+            "Children": "Children",
+            "NewPeople": "New people",
+            "Unknown": "Not sure / unknown"
+        },
+        "dogSize": {
+            "": "",
+            "Over40": "Over 40 lbs (old)",
+            "Under40": "Under 40 lbs (old)",
+            "Under25": "Under 25 lbs",
+            "From25to50": "25–50 lbs",
+            "From50to75": "50–75 lbs",
+            "From75to100": "75–100 lbs",
+            "Over100": "100+ lbs"
+        },
+        "foodSource": {
+            "": "",
+            "Owner": "Owner brings food",
+            "Facility": "Our food"
+        }
+    },
+    "tooltips": {
+        "feeding": "Updated from each approved booking. The client's latest answer wins.",
+        "dogSize": "Weight from the vet records. Boarding per night: Under 25 lbs $40, 25–50 lbs $45, 50–75 lbs $50, 75–100 lbs $55, 100+ lbs $60. Puppies add +$25 under 6 months / +$15 6–12 months.",
+        "birthDate": "Required. Boarding adds a puppy rate by age at drop-off (under 6 months, 6-12 months)."
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "fields": {
+        "dog": "Dog",
+        "service": "Service",
+        "dogs": "Dogs in the class",
+        "classType": "Class type",
+        "lessonPackage": "Lesson package",
+        "lessonLocation": "Location",
+        "lessonAddress": "Address",
+        "noShow": "No-show",
+        "lessonNotes": "Lesson notes",
+        "homework": "Homework"
+    },
+    "links": {
+        "dog": "Dog",
+        "dogs": "Dogs in the class",
+        "classRequests": "Requests",
+        "lessonPackage": "Lesson package"
+    },
+    "options": {
+        "service": {
+            "PrivateLesson": "Private lesson",
+            "GroupClass": "Group class"
+        },
+        "classType": {
+            "": "",
+            "BasicObedience": "Basic Obedience",
+            "AdvancedObedience": "Advanced Obedience",
+            "OffLeashBasic": "Off-Leash Basic",
+            "OffLeashAdvanced": "Off-Leash Advanced"
+        },
+        "lessonLocation": {
+            "": "",
+            "ClientHome": "Client's home",
+            "HomeDepot": "Home Depot",
+            "Park": "Park",
+            "Other": "Other"
+        }
+    },
+    "tooltips": {
+        "lessonPackage": "The 3/5/10-pack this lesson comes out of. The package counts it as soon as it is booked."
+    }
+}

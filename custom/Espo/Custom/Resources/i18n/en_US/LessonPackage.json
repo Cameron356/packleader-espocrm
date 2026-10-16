@@ -1,0 +1,37 @@
+{
+    "fields": {
+        "name": "Package",
+        "contact": "Client",
+        "dog": "Dog",
+        "sessions": "Lessons bought",
+        "sessionsHeld": "Done",
+        "sessionsBooked": "Booked",
+        "sessionsLeft": "Left",
+        "status": "Status",
+        "purchaseDate": "Bought on",
+        "description": "Notes",
+        "lessons": "Lessons"
+    },
+    "links": {
+        "contact": "Client",
+        "dog": "Dog",
+        "lessons": "Lessons"
+    },
+    "labels": {
+        "Create LessonPackage": "New lesson package"
+    },
+    "options": {
+        "status": {
+            "Active": "Lessons left",
+            "AllBooked": "All booked",
+            "Overbooked": "Overbooked",
+            "Finished": "Finished"
+        }
+    },
+    "tooltips": {
+        "sessionsLeft": "Lessons still to book: bought, minus booked (Planned), minus done (Held). A lesson set to Not Held gives its session back.",
+        "sessionsHeld": "Lessons in this package marked Held. Mark a no-show Held if it should use up a lesson.",
+        "sessionsBooked": "Lessons in this package still Planned.",
+        "sessions": "How many lessons they paid for. Change it to add or take away lessons."
+    }
+}

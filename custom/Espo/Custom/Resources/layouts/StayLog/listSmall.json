@@ -1,0 +1,12 @@
+[
+    {
+        "name": "date"
+    },
+    {
+        "name": "kind"
+    },
+    {
+        "name": "stay",
+        "link": true
+    }
+]

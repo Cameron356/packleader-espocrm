@@ -1,0 +1,188 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters",
+            "maxLength": 80
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "request": {
+            "type": "link",
+            "isCustom": true
+        },
+        "breed": {
+            "type": "varchar",
+            "maxLength": 80,
+            "isCustom": true
+        },
+        "sex": {
+            "type": "enum",
+            "options": [
+                "",
+                "Female",
+                "Male"
+            ],
+            "isCustom": true
+        },
+        "age": {
+            "type": "varchar",
+            "maxLength": 40,
+            "isCustom": true
+        },
+        "birthDate": {
+            "type": "date",
+            "isCustom": true
+        },
+        "dogSize": {
+            "type": "enum",
+            "options": [
+                "",
+                "Under25",
+                "From25to50",
+                "From50to75",
+                "From75to100",
+                "Over100",
+                "Over40",
+                "Under40"
+            ],
+            "isCustom": true
+        },
+        "intact": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "crateTrained": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "temperament": {
+            "type": "text",
+            "rows": 3,
+            "isCustom": true
+        },
+        "goodWith": {
+            "type": "checklist",
+            "options": [
+                "MaleDogs",
+                "FemaleDogs",
+                "LargeDogs",
+                "SmallDogs",
+                "Puppies",
+                "Cats",
+                "Children",
+                "NewPeople",
+                "Unknown"
+            ],
+            "isCustom": true
+        },
+        "foodSource": {
+            "type": "enum",
+            "options": [
+                "",
+                "Owner",
+                "Facility"
+            ],
+            "isCustom": true
+        },
+        "feeding": {
+            "type": "text",
+            "rows": 3,
+            "isCustom": true
+        },
+        "medications": {
+            "type": "text",
+            "rows": 3,
+            "isCustom": true
+        },
+        "specialCare": {
+            "type": "text",
+            "rows": 3,
+            "isCustom": true
+        },
+        "rabiesDue": {
+            "type": "date",
+            "isCustom": true
+        },
+        "dhppDue": {
+            "type": "date",
+            "isCustom": true
+        },
+        "bordetellaDue": {
+            "type": "date",
+            "isCustom": true
+        },
+        "preventionCurrent": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "healthCertified": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "shotRecords": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "isCustom": true
+        },
+        "dogRecordId": {
+            "type": "varchar",
+            "maxLength": 24,
+            "isCustom": true
+        },
+        "bookingId": {
+            "type": "varchar",
+            "maxLength": 24,
+            "isCustom": true
+        },
+        "shotRecordsSynced": {
+            "type": "text",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "request": {
+            "type": "belongsTo",
+            "entity": "Lead",
+            "foreign": "requestDogs",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "asc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        }
+    }
+}

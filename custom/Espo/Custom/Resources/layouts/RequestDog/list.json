@@ -1,0 +1,21 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "breed"
+    },
+    {
+        "name": "dogSize"
+    },
+    {
+        "name": "sex"
+    },
+    {
+        "name": "age"
+    },
+    {
+        "name": "request"
+    }
+]

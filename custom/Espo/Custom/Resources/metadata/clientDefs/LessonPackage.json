@@ -1,0 +1,11 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-ticket",
+    "relationshipPanels": {
+        "lessons": {
+            "create": true,
+            "select": true,
+            "createHandler": "custom:handlers/lesson-package-lesson"
+        }
+    }
+}

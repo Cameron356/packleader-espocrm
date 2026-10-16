@@ -1,0 +1,21 @@
+{
+    "relationshipPanels": {
+        "lessonPackages": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall",
+            "createAttributeMap": {
+                "id": "contactId",
+                "name": "contactName"
+            }
+        }
+    },
+    "detailActionList": [
+        {
+            "name": "lessonSchedule",
+            "label": "Lesson schedule",
+            "handler": "custom:handlers/contact-lesson-schedule",
+            "actionFunction": "open"
+        }
+    ]
+}

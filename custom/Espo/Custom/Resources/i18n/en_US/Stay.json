@@ -1,0 +1,79 @@
+{
+    "fields": {
+        "dog": "Dog",
+        "arrive": "Arrive",
+        "depart": "Depart",
+        "status": "Status",
+        "run": "Run",
+        "feeding": "Feeding notes",
+        "service": "Service",
+        "description": "Notes",
+        "emergencyName": "Emergency contact",
+        "emergencyPhone": "Emergency phone",
+        "healthCertified": "Healthy and free of contagious disease",
+        "foodSource": "Food",
+        "medications": "Medications",
+        "specialCare": "Special care",
+        "nightlyRate": "Nightly rate",
+        "discount": "Discount",
+        "paymentStatus": "Payment",
+        "photoConsent": "Photos allowed",
+        "agreementAccepted": "Agreement accepted",
+        "agreementDate": "Agreement date",
+        "dropOffTime": "Drop-off time",
+        "pickUpTime": "Pick-up time",
+        "feedingAM": "Feeding AM (last tick)",
+        "feedingPM": "Feeding PM (last tick)",
+        "medsAM": "Meds AM (last tick)",
+        "medsPM": "Meds PM (last tick)",
+        "careNote": "Care note (today)"
+    },
+    "links": {
+        "dog": "Dog"
+    },
+    "labels": {
+        "Create Stay": "Create booking"
+    },
+    "options": {
+        "status": {
+            "Requested": "Requested",
+            "Confirmed": "Confirmed",
+            "InHouse": "In house",
+            "Done": "Done"
+        },
+        "service": {
+            "Boarding": "Boarding",
+            "BoardAndTrain": "Board & train",
+            "DayStayAndTrain": "Day stay & train"
+        },
+        "foodSource": {
+            "": "",
+            "Owner": "Owner-provided",
+            "Facility": "Facility-provided"
+        },
+        "discount": {
+            "": "None",
+            "Military": "Military (20%)",
+            "Senior": "Senior (20%)",
+            "Rescue": "Rescue (20%)",
+            "FirstResponder": "First responder"
+        },
+        "paymentStatus": {
+            "Unpaid": "Due at drop-off",
+            "Paid": "Paid",
+            "Other": "Other agreement"
+        },
+        "dropOffTime": {
+            "": "",
+            "Morning": "Morning (8–10 AM)",
+            "Midday": "Midday (12–2 PM)",
+            "Evening": "Evening (5–7 PM)"
+        },
+        "pickUpTime": {
+            "": "",
+            "Morning": "Morning (8–10 AM)",
+            "Midday": "Midday (12–2 PM)",
+            "Evening": "Evening (5–7 PM)"
+        }
+    }
+}

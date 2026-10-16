@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Goal",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "stay"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "notes",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

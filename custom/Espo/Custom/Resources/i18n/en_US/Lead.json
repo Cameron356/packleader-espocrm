@@ -1,0 +1,171 @@
+{
+    "fields": {
+        "emergencyName": "Emergency contact",
+        "emergencyPhone": "Emergency phone",
+        "dogName": "Dog's name",
+        "breed": "Breed",
+        "sex": "Sex",
+        "age": "Age",
+        "intact": "Intact",
+        "crateTrained": "Crate trained",
+        "temperament": "Temperament",
+        "rabiesDue": "Rabies due",
+        "dhppDue": "DAPP due",
+        "bordetellaDue": "Bordetella due",
+        "preventionCurrent": "Flea/tick and heartworm current",
+        "service": "Service",
+        "arrive": "Start date",
+        "depart": "End date",
+        "preferredTime": "Time, if this is a lesson",
+        "foodSource": "Food",
+        "feeding": "Feeding: food, amount, and times of day",
+        "medications": "Medications, with dose and instructions (if any)",
+        "specialCare": "Special care",
+        "healthCertified": "Dog is healthy and free of contagious disease",
+        "photoConsent": "Photos are ok",
+        "agreementAccepted": "I agree to the boarding terms",
+        "dogSize": "Dog size",
+        "discount": "Discount",
+        "price": "Price (override)",
+        "lessonStart": "Lesson start",
+        "lessonMinutes": "Lesson minutes",
+        "lessonPackage": "Lesson package",
+        "groupClass": "Group class",
+        "clientNote": "Note to client",
+        "flowNote": "Office robot",
+        "ackSentAt": "Thanks sent",
+        "decisionSentAt": "Decision sent",
+        "bookingUrl": "Booking",
+        "invoiceTotal": "Invoice total",
+        "paymentDue": "Payment due",
+        "invoiceUrl": "Card pay link",
+        "stripeInvoiceId": "Stripe invoice",
+        "paymentStatus": "Payment",
+        "paidAt": "Paid at",
+        "vetClinic": "Vet clinic name",
+        "vetName": "Preferred vet",
+        "vetAddress": "Vet clinic address",
+        "vetPhone": "Vet clinic phone",
+        "emergencyVet": "Preferred emergency vet (if you have none, we use VEG Clearwater)",
+        "goodWith": "My dog is good with (check all that apply)",
+        "description": "Anything else we should know",
+        "shotRecords": "Shot records",
+        "requestDogs": "Dogs",
+        "returningClient": "Returning client",
+        "returningChanges": "What changed",
+        "dropOffTime": "Drop-off time",
+        "pickUpTime": "Pick-up time",
+        "lessonLocation": "Lesson location",
+        "lessonAddress": "Lesson address",
+        "birthDate": "Birth date",
+        "payMethod": "Payment method",
+        "bankInvoiceUrl": "Bank pay link (no fee)",
+        "invoiceLines": "Invoice lines",
+        "payRef": "Invoice ID"
+    },
+    "options": {
+        "sex": {
+            "": "",
+            "Female": "Female",
+            "Male": "Male"
+        },
+        "service": {
+            "": "",
+            "Boarding": "Boarding",
+            "BoardAndTrain": "Board & train",
+            "DayStayAndTrain": "Day stay & train",
+            "PrivateLesson": "Private lesson",
+            "GroupClass": "Group class",
+            "Custom": "Custom invoice"
+        },
+        "foodSource": {
+            "": "",
+            "Owner": "Owner-provided",
+            "Facility": "Facility-provided"
+        },
+        "status": {
+            "Approved": "Approved",
+            "Declined": "Declined",
+            "ApprovedZelle": "Approved (paying through Zelle)"
+        },
+        "dogSize": {
+            "": "",
+            "Over40": "Over 40 lbs (old)",
+            "Under40": "Under 40 lbs (old)",
+            "Under25": "Under 25 lbs",
+            "From25to50": "25–50 lbs",
+            "From50to75": "50–75 lbs",
+            "From75to100": "75–100 lbs",
+            "Over100": "100+ lbs"
+        },
+        "discount": {
+            "": "None",
+            "Military": "Military",
+            "FirstResponder": "First responder",
+            "Senior": "Senior (65+)",
+            "Rescue": "Rescue"
+        },
+        "lessonPackage": {
+            "Single": "Single session",
+            "Pack3": "3-pack",
+            "Pack5": "5-pack",
+            "Pack10": "10-pack"
+        },
+        "paymentStatus": {
+            "": "",
+            "Invoiced": "Invoiced",
+            "Paid": "Paid (Stripe)",
+            "PaidOther": "Paid another way"
+        },
+        "goodWith": {
+            "MaleDogs": "Male dogs",
+            "FemaleDogs": "Female dogs",
+            "LargeDogs": "Large dogs",
+            "SmallDogs": "Small dogs",
+            "Puppies": "Puppies",
+            "Cats": "Cats",
+            "Children": "Children",
+            "NewPeople": "New people",
+            "Unknown": "Not sure / unknown"
+        },
+        "dropOffTime": {
+            "": "",
+            "Morning": "Morning (8–10 AM)",
+            "Midday": "Midday (12–2 PM)",
+            "Evening": "Evening (5–7 PM)"
+        },
+        "pickUpTime": {
+            "": "",
+            "Morning": "Morning (8–10 AM)",
+            "Midday": "Midday (12–2 PM)",
+            "Evening": "Evening (5–7 PM)"
+        },
+        "lessonLocation": {
+            "": "",
+            "ClientHome": "Client's home",
+            "HomeDepot": "Home Depot",
+            "Park": "Park",
+            "Other": "Other"
+        },
+        "payMethod": {
+            "": "",
+            "Card": "Card (Stripe)",
+            "Zelle": "Zelle"
+        }
+    },
+    "links": {
+        "groupClass": "Group class",
+        "requestDogs": "Dogs"
+    },
+    "tooltips": {
+        "price": "Leave empty to use the price list. Type a total only to override it.",
+        "clientNote": "Goes into the approval or decline email, word for word.",
+        "flowNote": "Written by the office robot when it can't finish a request.",
+        "paymentStatus": "Set to 'Paid another way' when they pay by Zelle, Venmo or cash.",
+        "dogSize": "Weight from the vet records. Boarding per night: Under 25 lbs $40, 25–50 lbs $45, 50–75 lbs $50, 75–100 lbs $55, 100+ lbs $60. Puppies add +$25 under 6 months / +$15 6–12 months.",
+        "groupClass": "For a group class request: the class this dog joins.",
+        "returningChanges": "What the client changed since last time. Approving copies these changes onto the contact and dogs.",
+        "lessonAddress": "The address or place: their street address, which Home Depot, which park. Goes in the booked email.",
+        "payMethod": "Set by the office robot. 'Approved (paying through Zelle)' in Status makes it Zelle: the approval email gives the Zelle details instead of a card link, with no card fee."
+    }
+}

@@ -1,0 +1,412 @@
+{
+    "fields": {
+        "emergencyName": {
+            "type": "varchar",
+            "maxLength": 120,
+            "isCustom": true
+        },
+        "emergencyPhone": {
+            "type": "varchar",
+            "maxLength": 40,
+            "isCustom": true
+        },
+        "dogName": {
+            "type": "varchar",
+            "maxLength": 80,
+            "isCustom": true
+        },
+        "breed": {
+            "type": "varchar",
+            "maxLength": 80,
+            "isCustom": true
+        },
+        "sex": {
+            "type": "enum",
+            "options": [
+                "",
+                "Female",
+                "Male"
+            ],
+            "isCustom": true
+        },
+        "age": {
+            "type": "varchar",
+            "maxLength": 40,
+            "isCustom": true
+        },
+        "intact": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "crateTrained": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "temperament": {
+            "type": "text",
+            "isCustom": true
+        },
+        "rabiesDue": {
+            "type": "date",
+            "isCustom": true
+        },
+        "dhppDue": {
+            "type": "date",
+            "isCustom": true
+        },
+        "bordetellaDue": {
+            "type": "date",
+            "isCustom": true
+        },
+        "preventionCurrent": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "service": {
+            "type": "enum",
+            "options": [
+                "",
+                "Boarding",
+                "BoardAndTrain",
+                "DayStayAndTrain",
+                "PrivateLesson",
+                "GroupClass",
+                "Custom"
+            ],
+            "isCustom": true
+        },
+        "arrive": {
+            "type": "date",
+            "isCustom": true
+        },
+        "depart": {
+            "type": "date",
+            "isCustom": true
+        },
+        "preferredTime": {
+            "type": "varchar",
+            "maxLength": 80,
+            "isCustom": true
+        },
+        "foodSource": {
+            "type": "enum",
+            "options": [
+                "",
+                "Owner",
+                "Facility"
+            ],
+            "isCustom": true
+        },
+        "feeding": {
+            "type": "text",
+            "isCustom": true
+        },
+        "medications": {
+            "type": "text",
+            "isCustom": true
+        },
+        "specialCare": {
+            "type": "text",
+            "isCustom": true
+        },
+        "healthCertified": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "photoConsent": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "agreementAccepted": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "dogSize": {
+            "type": "enum",
+            "options": [
+                "",
+                "Under25",
+                "From25to50",
+                "From50to75",
+                "From75to100",
+                "Over100",
+                "Over40",
+                "Under40"
+            ],
+            "isCustom": true
+        },
+        "discount": {
+            "type": "enum",
+            "options": [
+                "",
+                "Military",
+                "FirstResponder",
+                "Senior",
+                "Rescue"
+            ],
+            "isCustom": true
+        },
+        "price": {
+            "type": "currency",
+            "min": 0,
+            "isCustom": true
+        },
+        "lessonStart": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "lessonMinutes": {
+            "type": "int",
+            "default": 30,
+            "min": 15,
+            "max": 480,
+            "isCustom": true
+        },
+        "lessonPackage": {
+            "type": "enum",
+            "options": [
+                "Single",
+                "Pack3",
+                "Pack5",
+                "Pack10"
+            ],
+            "default": "Single",
+            "isCustom": true
+        },
+        "groupClass": {
+            "type": "link",
+            "isCustom": true
+        },
+        "clientNote": {
+            "type": "text",
+            "rows": 3,
+            "isCustom": true
+        },
+        "flowNote": {
+            "type": "text",
+            "rows": 2,
+            "isCustom": true
+        },
+        "ackSentAt": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "decisionSentAt": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "bookingUrl": {
+            "type": "url",
+            "isCustom": true
+        },
+        "invoiceTotal": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "paymentDue": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "invoiceUrl": {
+            "type": "url",
+            "isCustom": true
+        },
+        "stripeInvoiceId": {
+            "type": "varchar",
+            "maxLength": 64,
+            "isCustom": true
+        },
+        "paymentStatus": {
+            "type": "enum",
+            "options": [
+                "",
+                "Invoiced",
+                "Paid",
+                "PaidOther"
+            ],
+            "style": {
+                "Invoiced": "warning",
+                "Paid": "success",
+                "PaidOther": "success"
+            },
+            "isCustom": true
+        },
+        "paidAt": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "status": {
+            "options": [
+                "New",
+                "Assigned",
+                "In Process",
+                "Approved",
+                "ApprovedZelle",
+                "Declined",
+                "Converted",
+                "Recycled",
+                "Dead"
+            ],
+            "style": {
+                "Approved": "success",
+                "Declined": "danger",
+                "ApprovedZelle": "success"
+            }
+        },
+        "vetClinic": {
+            "type": "varchar",
+            "maxLength": 120,
+            "isCustom": true
+        },
+        "vetName": {
+            "type": "varchar",
+            "maxLength": 120,
+            "isCustom": true
+        },
+        "vetAddress": {
+            "type": "varchar",
+            "maxLength": 255,
+            "isCustom": true
+        },
+        "vetPhone": {
+            "type": "varchar",
+            "maxLength": 40,
+            "isCustom": true
+        },
+        "emergencyVet": {
+            "type": "varchar",
+            "maxLength": 160,
+            "isCustom": true
+        },
+        "goodWith": {
+            "type": "checklist",
+            "options": [
+                "MaleDogs",
+                "FemaleDogs",
+                "LargeDogs",
+                "SmallDogs",
+                "Puppies",
+                "Cats",
+                "Children",
+                "NewPeople",
+                "Unknown"
+            ],
+            "isCustom": true
+        },
+        "shotRecords": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "isCustom": true
+        },
+        "uploadToken": {
+            "type": "varchar",
+            "maxLength": 64,
+            "isCustom": true
+        },
+        "dogRecordId": {
+            "type": "varchar",
+            "maxLength": 24,
+            "isCustom": true
+        },
+        "shotRecordsSynced": {
+            "type": "text",
+            "isCustom": true
+        },
+        "returningClient": {
+            "type": "bool",
+            "isCustom": true
+        },
+        "returningContactId": {
+            "type": "varchar",
+            "maxLength": 24,
+            "isCustom": true
+        },
+        "returningChanges": {
+            "type": "text",
+            "rows": 2,
+            "readOnly": true,
+            "isCustom": true
+        },
+        "dropOffTime": {
+            "type": "enum",
+            "options": [
+                "",
+                "Morning",
+                "Midday",
+                "Evening"
+            ],
+            "isCustom": true
+        },
+        "pickUpTime": {
+            "type": "enum",
+            "options": [
+                "",
+                "Morning",
+                "Midday",
+                "Evening"
+            ],
+            "isCustom": true
+        },
+        "lessonPackageId": {
+            "type": "varchar",
+            "maxLength": 24,
+            "isCustom": true
+        },
+        "lessonLocation": {
+            "type": "enum",
+            "options": [
+                "",
+                "ClientHome",
+                "HomeDepot",
+                "Park",
+                "Other"
+            ],
+            "isCustom": true
+        },
+        "lessonAddress": {
+            "type": "varchar",
+            "maxLength": 255,
+            "isCustom": true
+        },
+        "birthDate": {
+            "type": "date",
+            "isCustom": true
+        },
+        "payMethod": {
+            "type": "enum",
+            "options": [
+                "",
+                "Card",
+                "Zelle"
+            ],
+            "isCustom": true
+        },
+        "bankInvoiceUrl": {
+            "type": "url",
+            "isCustom": true
+        },
+        "invoiceLines": {
+            "type": "text",
+            "isCustom": true
+        },
+        "payRef": {
+            "type": "varchar",
+            "maxLength": 12,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "groupClass": {
+            "type": "belongsTo",
+            "entity": "Meeting",
+            "foreign": "classRequests",
+            "isCustom": true
+        },
+        "requestDogs": {
+            "type": "hasMany",
+            "entity": "RequestDog",
+            "foreign": "request",
+            "isCustom": true
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "fields": {
+        "dog": {
+            "type": "link",
+            "isCustom": true
+        },
+        "service": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "PrivateLesson",
+                "GroupClass"
+            ],
+            "isCustom": true,
+            "style": {
+                "PrivateLesson": "primary",
+                "GroupClass": "info"
+            }
+        },
+        "dogs": {
+            "type": "linkMultiple",
+            "isCustom": true
+        },
+        "classType": {
+            "type": "enum",
+            "isCustom": true,
+            "options": [
+                "",
+                "BasicObedience",
+                "AdvancedObedience",
+                "OffLeashBasic",
+                "OffLeashAdvanced"
+            ]
+        },
+        "lessonPackage": {
+            "type": "link",
+            "isCustom": true
+        },
+        "lessonLocation": {
+            "type": "enum",
+            "options": [
+                "",
+                "ClientHome",
+                "HomeDepot",
+                "Park",
+                "Other"
+            ],
+            "isCustom": true
+        },
+        "lessonAddress": {
+            "type": "varchar",
+            "maxLength": 255,
+            "isCustom": true
+        },
+        "duration": {
+            "type": "duration",
+            "default": 1800
+        },
+        "noShow": {
+            "type": "bool",
+            "default": false,
+            "isCustom": true
+        },
+        "lessonNotes": {
+            "type": "text",
+            "isCustom": true
+        },
+        "homework": {
+            "type": "text",
+            "isCustom": true
+        }
+    },
+    "links": {
+        "dog": {
+            "type": "belongsTo",
+            "foreign": "meetings",
+            "entity": "Dog",
+            "isCustom": true
+        },
+        "dogs": {
+            "type": "hasMany",
+            "foreign": "groupClasses",
+            "entity": "Dog",
+            "relationName": "groupClassDog",
+            "isCustom": true
+        },
+        "classRequests": {
+            "type": "hasMany",
+            "entity": "Lead",
+            "foreign": "groupClass",
+            "isCustom": true,
+            "layoutRelationshipsDisabled": true
+        },
+        "lessonPackage": {
+            "type": "belongsTo",
+            "entity": "LessonPackage",
+            "foreign": "lessons",
+            "isCustom": true
+        }
+    }
+}

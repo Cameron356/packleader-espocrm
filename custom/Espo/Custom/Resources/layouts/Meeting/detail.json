@@ -1,0 +1,88 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "service"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "dog"
+                }
+            ],
+            [
+                {
+                    "name": "noShow"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "lessonPackage"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "dateEnd"
+                }
+            ],
+            [
+                {
+                    "name": "lessonLocation"
+                },
+                {
+                    "name": "lessonAddress"
+                }
+            ],
+            [
+                {
+                    "name": "duration"
+                },
+                {
+                    "name": "reminders"
+                }
+            ],
+            [
+                {
+                    "name": "dogs",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "lessonNotes",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "homework",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "classType"
+                },
+                false
+            ]
+        ]
+    }
+]

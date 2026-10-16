@@ -1,0 +1,129 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters",
+            "maxLength": 120
+        },
+        "contact": {
+            "type": "link",
+            "required": true,
+            "isCustom": true
+        },
+        "dog": {
+            "type": "link",
+            "isCustom": true
+        },
+        "sessions": {
+            "type": "int",
+            "required": true,
+            "min": 1,
+            "max": 100,
+            "default": 5,
+            "isCustom": true
+        },
+        "sessionsHeld": {
+            "type": "int",
+            "readOnly": true,
+            "default": 0,
+            "isCustom": true
+        },
+        "sessionsBooked": {
+            "type": "int",
+            "readOnly": true,
+            "default": 0,
+            "isCustom": true
+        },
+        "sessionsLeft": {
+            "type": "int",
+            "readOnly": true,
+            "isCustom": true
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "Active",
+                "AllBooked",
+                "Overbooked",
+                "Finished"
+            ],
+            "default": "Active",
+            "readOnly": true,
+            "style": {
+                "Active": "success",
+                "AllBooked": "info",
+                "Overbooked": "danger",
+                "Finished": null
+            },
+            "displayAsLabel": true,
+            "isCustom": true
+        },
+        "purchaseDate": {
+            "type": "date",
+            "isCustom": true
+        },
+        "description": {
+            "type": "text",
+            "rows": 3
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "contact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "lessonPackages",
+            "isCustom": true
+        },
+        "dog": {
+            "type": "belongsTo",
+            "entity": "Dog",
+            "foreign": "lessonPackages",
+            "isCustom": true
+        },
+        "lessons": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "lessonPackage",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "service",
+        "width": 16
+    },
+    {
+        "name": "dog",
+        "width": 16
+    },
+    {
+        "name": "status",
+        "width": 12
+    },
+    {
+        "name": "dateStart",
+        "width": 16
+    },
+    {
+        "name": "assignedUser",
+        "width": 14
+    }
+]

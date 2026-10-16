@@ -1,0 +1,18 @@
+{
+    "fields": {
+        "name": "Goal",
+        "stay": "Stay",
+        "status": "Status",
+        "notes": "Notes"
+    },
+    "links": {
+        "stay": "Stay"
+    },
+    "options": {
+        "status": {
+            "NotStarted": "Not started",
+            "Working": "Working",
+            "Solid": "Solid"
+        }
+    }
+}

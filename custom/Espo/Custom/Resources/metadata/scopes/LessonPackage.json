@@ -1,0 +1,15 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "module": "Custom",
+    "customizable": true,
+    "importable": true,
+    "stream": false,
+    "disabled": false,
+    "type": "Base",
+    "object": true,
+    "isCustom": true,
+    "statusField": "status"
+}

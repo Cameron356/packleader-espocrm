@@ -1,0 +1,118 @@
+{
+    "relationshipPanels": {
+        "requestDogs": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "lessonStart": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "PrivateLesson"
+                        }
+                    ]
+                }
+            },
+            "lessonMinutes": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "PrivateLesson"
+                        }
+                    ]
+                }
+            },
+            "lessonLocation": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "PrivateLesson"
+                        }
+                    ]
+                }
+            },
+            "lessonAddress": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "PrivateLesson"
+                        }
+                    ]
+                }
+            },
+            "lessonPackage": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "PrivateLesson"
+                        }
+                    ]
+                }
+            },
+            "groupClass": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "GroupClass"
+                        }
+                    ]
+                }
+            },
+            "dogSize": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "service",
+                            "value": "Boarding"
+                        }
+                    ]
+                }
+            },
+            "dropOffTime": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "in",
+                            "attribute": "service",
+                            "value": [
+                                "Boarding",
+                                "BoardAndTrain"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "pickUpTime": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "in",
+                            "attribute": "service",
+                            "value": [
+                                "Boarding",
+                                "BoardAndTrain"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

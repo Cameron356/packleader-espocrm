@@ -1,0 +1,20 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-dog",
+    "relationshipPanels": {
+        "stays": {},
+        "meetings": {},
+        "groupClasses": {},
+        "lessonPackages": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall",
+            "createAttributeMap": {
+                "id": "dogId",
+                "name": "dogName",
+                "contactId": "contactId",
+                "contactName": "contactName"
+            }
+        }
+    }
+}

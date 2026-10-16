@@ -1,0 +1,41 @@
+@import url("../../css/espo/dark.css");
+
+:root {
+  --body-bg: #0b0d10;
+  --panel-bg: #14181c;
+  --navbar-bg: #04090c;
+  --navbar-inverse-bg: #04090c;
+  --navbar-link-color: #e0e1db;
+  --navbar-inverse-link-color: #e0e1db;
+  --navbar-link-active-bg: #1c2410;
+  --navbar-inverse-link-active-bg: #1c2410;
+  --navbar-inverse-link-hover-bg: #1c2410;
+  --btn-primary-bg: #84c432;
+  --btn-primary-border: #6ea028;
+  --btn-primary-color: #111111;
+  --btn-primary-hover-bg: #9ad44a;
+  --btn-primary-hover-border: #9ad44a;
+  --btn-primary-active-bg: #6ea028;
+  --btn-primary-active-border: #5d8a22;
+  --link-color: #84c432;
+  --link-hover-color: #b6e06a;
+  --brand-primary: #84c432;
+  --brand-success: #84c432;
+}
+
+.navbar-brand img,
+.navbar .logo img,
+img.logo {
+  max-height: 48px;
+  width: auto;
+  background: #04090c;
+}
+
+.alert img,
+.panel-body .note img {
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  background: #04090c;
+}

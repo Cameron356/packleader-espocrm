@@ -1,0 +1,21 @@
+{
+    "scopeNames": {
+        "Dog": "Dog",
+        "Stay": "Booking",
+        "Meeting": "Lesson",
+        "Lead": "Request",
+        "RequestDog": "Dog on request",
+        "LessonPackage": "Lesson package"
+    },
+    "scopeNamesPlural": {
+        "Dog": "Dogs",
+        "Stay": "Bookings",
+        "Meeting": "Lessons",
+        "Lead": "Requests",
+        "RequestDog": "Dogs on requests",
+        "LessonPackage": "Lesson packages"
+    },
+    "themes": {
+        "PackLeader": "Pack Leader"
+    }
+}

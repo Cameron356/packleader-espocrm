@@ -1,0 +1,119 @@
+[
+    {
+        "label": "Stay",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "service"
+                }
+            ],
+            [
+                {
+                    "name": "dog"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "arrive"
+                },
+                {
+                    "name": "depart"
+                }
+            ],
+            [
+                {
+                    "name": "dropOffTime"
+                },
+                {
+                    "name": "pickUpTime"
+                }
+            ],
+            [
+                {
+                    "name": "run"
+                },
+                {
+                    "name": "foodSource"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Care",
+        "rows": [
+            [
+                {
+                    "name": "emergencyName"
+                },
+                {
+                    "name": "emergencyPhone"
+                }
+            ],
+            [
+                {
+                    "name": "healthCertified"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "feeding",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "medications",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "specialCare",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Payment and agreement",
+        "rows": [
+            [
+                {
+                    "name": "nightlyRate"
+                },
+                {
+                    "name": "discount"
+                }
+            ],
+            [
+                {
+                    "name": "paymentStatus"
+                },
+                {
+                    "name": "agreementDate"
+                }
+            ],
+            [
+                {
+                    "name": "photoConsent"
+                },
+                {
+                    "name": "agreementAccepted"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

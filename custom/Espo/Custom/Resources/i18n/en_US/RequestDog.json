@@ -1,0 +1,70 @@
+{
+    "fields": {
+        "name": "Dog's name",
+        "request": "Request",
+        "breed": "Breed",
+        "sex": "Sex",
+        "age": "Age",
+        "birthDate": "Birth date",
+        "dogSize": "Size",
+        "intact": "Intact",
+        "crateTrained": "Crate trained",
+        "temperament": "Temperament",
+        "goodWith": "Good with",
+        "foodSource": "Food",
+        "feeding": "Feeding: food, amount, times of day",
+        "medications": "Medications, with dose and instructions",
+        "specialCare": "Special care",
+        "rabiesDue": "Rabies due",
+        "dhppDue": "DAPP due",
+        "bordetellaDue": "Bordetella due",
+        "preventionCurrent": "Flea/tick and heartworm current",
+        "healthCertified": "Healthy and free of contagious disease",
+        "shotRecords": "Shot records",
+        "dogRecordId": "Dog record",
+        "bookingId": "Booking",
+        "shotRecordsSynced": "Records copied"
+    },
+    "links": {
+        "request": "Request"
+    },
+    "labels": {
+        "Create RequestDog": "Add dog"
+    },
+    "options": {
+        "sex": {
+            "": "",
+            "Female": "Female",
+            "Male": "Male"
+        },
+        "dogSize": {
+            "": "",
+            "Under25": "Under 25 lbs",
+            "From25to50": "25–50 lbs",
+            "From50to75": "50–75 lbs",
+            "From75to100": "75–100 lbs",
+            "Over100": "100+ lbs",
+            "Over40": "Over 40 lbs (old)",
+            "Under40": "Under 40 lbs (old)"
+        },
+        "foodSource": {
+            "": "",
+            "Owner": "Owner-provided",
+            "Facility": "Facility-provided"
+        },
+        "goodWith": {
+            "MaleDogs": "Male dogs",
+            "FemaleDogs": "Female dogs",
+            "LargeDogs": "Large dogs",
+            "SmallDogs": "Small dogs",
+            "Puppies": "Puppies",
+            "Cats": "Cats",
+            "Children": "Children",
+            "NewPeople": "New people",
+            "Unknown": "Not sure / unknown"
+        }
+    },
+    "tooltips": {
+        "dogSize": "Weight tier from the vet records. Boarding is priced by it."
+    }
+}

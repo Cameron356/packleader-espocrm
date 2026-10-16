@@ -1,0 +1,30 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "contact",
+        "width": 18
+    },
+    {
+        "name": "dog",
+        "width": 14
+    },
+    {
+        "name": "sessions",
+        "width": 9
+    },
+    {
+        "name": "sessionsLeft",
+        "width": 9
+    },
+    {
+        "name": "status",
+        "width": 12
+    },
+    {
+        "name": "purchaseDate",
+        "width": 12
+    }
+]

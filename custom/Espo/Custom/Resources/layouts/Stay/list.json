@@ -1,0 +1,30 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "service",
+        "width": 16
+    },
+    {
+        "name": "dog",
+        "width": 16
+    },
+    {
+        "name": "status",
+        "width": 12
+    },
+    {
+        "name": "arrive",
+        "width": 12
+    },
+    {
+        "name": "depart",
+        "width": 12
+    },
+    {
+        "name": "run",
+        "width": 8
+    }
+]

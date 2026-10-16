@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "name": "Name",
+        "stay": "Stay",
+        "date": "Date",
+        "kind": "Kind",
+        "note": "Note",
+        "doneBy": "By",
+        "sentAt": "Sent at"
+    },
+    "links": {
+        "stay": "Stay"
+    },
+    "options": {
+        "kind": {
+            "": "",
+            "Report": "Report card",
+            "Training": "Training note"
+        }
+    }
+}

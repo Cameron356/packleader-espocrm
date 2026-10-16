@@ -1,0 +1,79 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "maxLength": 191,
+            "required": false,
+            "isCustom": true
+        },
+        "stay": {
+            "type": "link",
+            "isCustom": true
+        },
+        "date": {
+            "type": "date",
+            "isCustom": true
+        },
+        "kind": {
+            "type": "enum",
+            "options": [
+                "",
+                "Report",
+                "Training"
+            ],
+            "default": "Report",
+            "isCustom": true
+        },
+        "note": {
+            "type": "text",
+            "rows": 4,
+            "isCustom": true
+        },
+        "doneBy": {
+            "type": "varchar",
+            "maxLength": 80,
+            "isCustom": true
+        },
+        "sentAt": {
+            "type": "datetime",
+            "isCustom": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        }
+    },
+    "links": {
+        "stay": {
+            "type": "belongsTo",
+            "entity": "Stay",
+            "isCustom": true
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "asc"
+    }
+}
