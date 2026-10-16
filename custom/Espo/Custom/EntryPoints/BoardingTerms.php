@@ -1,5 +1,8 @@
 <?php
 // SPDX-License-Identifier: AGPL-3.0-or-later
+// Public boarding-terms page: https://office.example.com/?entryPoint=boardingTerms
+// Renders the "Boarding agreement terms" knowledge base article (what every booking's
+// approval email links to). Installed to custom/Espo/Custom/EntryPoints/BoardingTerms.php.
 namespace Espo\Custom\EntryPoints;
 
 use Espo\Core\Api\Request;
@@ -7,6 +10,7 @@ use Espo\Core\Api\Response;
 use Espo\Core\EntryPoint\EntryPoint;
 use Espo\Core\EntryPoint\Traits\NoAuth;
 use Espo\Core\Exceptions\NotFound;
+use Espo\Custom\PackLeader\Footer;
 use Espo\ORM\EntityManager;
 
 class BoardingTerms implements EntryPoint
@@ -46,7 +50,9 @@ class BoardingTerms implements EntryPoint
             . '<img class="logo" src="' . $logo . '" alt="Pack Leader K9">'
             . '<h1>' . $name . '</h1>'
             . $body
-            . '<p><a href="' . $back . '">Back to the form</a></p></body></html>';
+            . '<p><a href="' . $back . '">Back to the form</a></p>'
+            . Footer::html()
+            . '</body></html>';
 
         $response->setHeader('Content-Type', 'text/html; charset=utf-8');
         $response->writeBody($html);

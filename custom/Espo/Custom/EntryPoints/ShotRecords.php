@@ -17,6 +17,7 @@ use Espo\Core\Api\Response;
 use Espo\Core\EntryPoint\EntryPoint;
 use Espo\Core\EntryPoint\Traits\NoAuth;
 use Espo\Core\Exceptions\NotFound;
+use Espo\Custom\PackLeader\Footer;
 use Espo\ORM\EntityManager;
 
 class ShotRecords implements EntryPoint
@@ -118,6 +119,7 @@ class ShotRecords implements EntryPoint
             . '<p>Please upload proof of a current rabies vaccine. If you have DAPP (distemper/parvo) or Bordetella records, add those too. A photo of the vet paperwork is fine.</p>'
             . $form
             . '<p class="small">Questions? Call or text (727) 555-0100.</p>'
+            . Footer::html()
             . '</body></html>';
 
         $response->setHeader('Content-Type', 'text/html; charset=utf-8');

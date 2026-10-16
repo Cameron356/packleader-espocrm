@@ -13,6 +13,7 @@ use Espo\Core\Api\Request;
 use Espo\Core\Api\Response;
 use Espo\Core\EntryPoint\EntryPoint;
 use Espo\Core\EntryPoint\Traits\NoAuth;
+use Espo\Custom\PackLeader\Footer;
 
 class Booking implements EntryPoint
 {
@@ -37,6 +38,7 @@ class Booking implements EntryPoint
             $html = $head . '<h1>Thank you</h1>'
                 . '<p class="lead">We got your request. Check your email for a confirmation. We\'ll look it over and get back to you, usually within a day.</p>'
                 . '<p class="lead">Questions? Call or text <a href="tel:+17275550100">(727) 555-0100</a>.</p>'
+                . Footer::html()
                 . '</body></html>';
             $this->send($response, $html);
             return;
@@ -83,7 +85,9 @@ class Booking implements EntryPoint
             . '<button type="submit" id="go">Send request</button>'
             . '</form>'
             . '<p class="small">Questions? Call or text <a href="tel:+17275550100">(727) 555-0100</a>.</p>'
-            . '<script>' . self::JS . self::HANDOFF_JS . self::LESSONLOC_JS . self::PHONE_JS . self::RESTORE_JS . '</script></body></html>';
+            . '<script>' . self::JS . self::HANDOFF_JS . self::LESSONLOC_JS . self::PHONE_JS . self::RESTORE_JS . '</script>'
+            . Footer::html()
+            . '</body></html>';
 
         $this->send($response, $html);
     }

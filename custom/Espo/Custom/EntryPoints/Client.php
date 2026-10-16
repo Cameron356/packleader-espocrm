@@ -17,6 +17,7 @@ use Espo\Core\Api\Response;
 use Espo\Core\EntryPoint\EntryPoint;
 use Espo\Core\EntryPoint\Traits\NoAuth;
 use Espo\Custom\PackLeader\Client as Link;
+use Espo\Custom\PackLeader\Footer;
 use Espo\ORM\Entity;
 use Espo\ORM\EntityManager;
 
@@ -45,7 +46,9 @@ class Client implements EntryPoint
                 . '<h1>This link has run out</h1>'
                 . '<p class="lead">Sign-in links from "Booked with us before?" work for 24 hours. Enter your email for a fresh one.</p>'
                 . \Espo\Custom\EntryPoints\Booking::returningBox(false)
-                . '<p class="lead"><a href="/?entryPoint=booking">Or go to the booking form</a></p></body></html>');
+                . '<p class="lead"><a href="/?entryPoint=booking">Or go to the booking form</a></p>'
+                . Footer::html()
+                . '</body></html>');
             return;
         }
 
@@ -79,7 +82,9 @@ class Client implements EntryPoint
             . '<button type="submit" id="go">Send request</button>'
             . '</form>'
             . '<p class="small">Questions? Call or text <a href="tel:+17275550100">(727) 555-0100</a>.</p>'
-            . '<script>' . self::JS . Booking::HANDOFF_JS . Booking::LESSONLOC_JS . Booking::PHONE_JS . Booking::RESTORE_JS . '</script></body></html>';
+            . '<script>' . self::JS . Booking::HANDOFF_JS . Booking::LESSONLOC_JS . Booking::PHONE_JS . Booking::RESTORE_JS . '</script>'
+            . Footer::html()
+            . '</body></html>';
 
         $this->send($response, $html);
     }

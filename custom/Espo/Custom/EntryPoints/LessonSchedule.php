@@ -18,6 +18,7 @@ use Espo\Core\EntryPoint\EntryPoint;
 use Espo\Core\Exceptions\BadRequest;
 use Espo\Core\Exceptions\Forbidden;
 use Espo\Core\Exceptions\NotFound;
+use Espo\Custom\PackLeader\Footer;
 use Espo\ORM\EntityManager;
 
 class LessonSchedule implements EntryPoint
@@ -180,6 +181,7 @@ class LessonSchedule implements EntryPoint
             . '<p class="small">Pack Leader K9 · (727) 555-0100 · example.com</p>'
             . '<script>document.getElementById("copy").onclick=function(){var t=document.getElementById("txt").value,b=this;'
             . 'navigator.clipboard.writeText(t).then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy as text"},2000);});};</script>'
+            . Footer::html()
             . '</body></html>';
         $response->setHeader('Content-Type', 'text/html; charset=utf-8');
         $response->setHeader('Cache-Control', 'no-store');

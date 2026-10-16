@@ -11,6 +11,7 @@ use Espo\Core\Api\Response;
 use Espo\Core\EntryPoint\EntryPoint;
 use Espo\Core\EntryPoint\Traits\NoAuth;
 use Espo\Core\Exceptions\NotFound;
+use Espo\Custom\PackLeader\Footer;
 use Espo\ORM\EntityManager;
 
 class Rates implements EntryPoint
@@ -54,7 +55,9 @@ class Rates implements EntryPoint
             . '<img class="logo" src="' . $logo . '" alt="Pack Leader K9">'
             . '<h1>Rates</h1>'
             . $body
-            . '<p><a href="' . $back . '">Book now</a></p></body></html>';
+            . '<p><a href="' . $back . '">Book now</a></p>'
+            . Footer::html()
+            . '</body></html>';
 
         $response->setHeader('Content-Type', 'text/html; charset=utf-8');
         $response->writeBody($html);
