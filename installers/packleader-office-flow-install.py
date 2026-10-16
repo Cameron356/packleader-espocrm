@@ -136,11 +136,14 @@ PHP_FILES = {  # repo file -> path in the container
     "Booking.php": "custom/Espo/Custom/EntryPoints/Booking.php",   # EspoCRM serves class X at ?entryPoint=x
     "BookingSubmit.php": "custom/Espo/Custom/Api/BookingSubmit.php",
     "PackLeaderClient.php": "custom/Espo/Custom/PackLeader/Client.php",
+    "PackLeaderFooter.php": "custom/Espo/Custom/PackLeader/Footer.php",
     "Client.php": "custom/Espo/Custom/EntryPoints/Client.php",
     "BookAgainSubmit.php": "custom/Espo/Custom/Api/BookAgainSubmit.php",
     "ClientLinkRequest.php": "custom/Espo/Custom/Api/ClientLinkRequest.php",
     "KennelBoard.php": "custom/Espo/Custom/EntryPoints/KennelBoard.php",
     "LessonSchedule.php": "custom/Espo/Custom/EntryPoints/LessonSchedule.php",
+    "Rates.php": "custom/Espo/Custom/EntryPoints/Rates.php",
+    "BoardingTerms.php": "custom/Espo/Custom/EntryPoints/BoardingTerms.php",
 }
 # Top-bar tab for the kennel board, right after Bookings. Only users who can read Bookings see it.
 BOARD_TAB = {"type": "url", "text": "Kennel board", "url": "?entryPoint=kennelBoard", "iconClass": "fas fa-paw",

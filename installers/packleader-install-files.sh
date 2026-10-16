@@ -14,7 +14,11 @@ FILES=(
   "Booking.php:custom/Espo/Custom/EntryPoints/Booking.php"
   "Client.php:custom/Espo/Custom/EntryPoints/Client.php"
   "KennelBoard.php:custom/Espo/Custom/EntryPoints/KennelBoard.php"
+  "Rates.php:custom/Espo/Custom/EntryPoints/Rates.php"
+  "BoardingTerms.php:custom/Espo/Custom/EntryPoints/BoardingTerms.php"
+  "LessonSchedule.php:custom/Espo/Custom/EntryPoints/LessonSchedule.php"
   "BookAgainSubmit.php:custom/Espo/Custom/Api/BookAgainSubmit.php"
+  "PackLeaderFooter.php:custom/Espo/Custom/PackLeader/Footer.php"
 )
 apply=0; [ "${1:-}" = "--apply" ] && apply=1
 
