@@ -1,6 +1,6 @@
 # Pack Leader K9 — EspoCRM customizations
 
-The code that makes the [Pack Leader K9](https://example.com) office book (EspoCRM) work for the
+The code that makes the Pack Leader K9 office book (EspoCRM) work for the
 business: public booking and shot-record pages, the returning-client page, the kennel board, lesson packages,
 report cards, and the installers that put it all into EspoCRM. Published to satisfy the AGPL (EspoCRM is
 AGPLv3 and these pages modify it), so anyone who uses the modified book over the network can get its source.
@@ -62,9 +62,10 @@ to target a dev book. Every script backs up `custom/` before it writes.
 
 Nothing here is a secret. The installers read tokens/passwords from environment variables or files at run
 time (e.g. `PK9_ESPO_URL`, `CALENDAR_TOKEN`, `ESPOCRM_DATABASE_*`, `~/packleader-smtp.token`) — none of those
-values are in this repo. The only hard-coded real-world values are the business's own public phone number and
-its public domains (`example.com`, `office.example.com`, `go.example.com`); everything else is a
-`555`-style placeholder or a config lookup.
+values are in this repo. The production hostnames and phone number are replaced with `example.com`-style and
+`555`-style placeholders in this published copy (the real values live only in the running install, so they are
+not exposed here); everything else is a config lookup. To restore the real values, search for `example.com` and
+`(727) 555-0100`.
 
 ## License
 
